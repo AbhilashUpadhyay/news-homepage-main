@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100vw;
+    
+   
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: hsl(36, 100%, 99%);
+}
+.container{
+    width: 85%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: hsl(36, 100%, 99%);
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-weight: 600;
+}
+li{
+    padding: 15px 18px;
+    cursor: pointer;
+    color: hsl(236, 13%, 42%);
+}
+
+section{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    
+}
+.top{
+   display: flex;
+   justify-content: space-between;
+
+}
+.left{
+    width: 65%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.hero_img{
+    width: 100%;
+    height: 60%;
+    background: url(images/image-web-3-desktop.jpg) no-repeat center center/cover;
+}
+.top_btom{
+    display: flex;
+    height: 35%;
+    width: 100%;
+    justify-content: space-between;
+}
+.btom_left{
+    width: 35%;
+    height: 100%;
+   
+}
+.btom_right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+h1{
+    font-size: 2.8rem;
+    line-height: 2.85rem;
+}
+button{
+    width: 50%;
+    height: 40px;
+    background: hsl(5, 85%, 63%);
+    outline: none;
+    border: none;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+p{
+    color: hsl(236, 13%, 42%);
+    font-size: 0.95rem;
+    
+}
+
+.right{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:  hsl(240, 100%, 5%);
+    align-items: center;
+}
+h2{
+    font-size: 2rem;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: hsl(35, 77%, 62%);
+    padding: 15px;
+}
+.boxes{
+    width: 90%;
+    height: 24%;
+    background: hsl(240, 100%, 5%);
+    border-bottom: 1px solid grey;
+}
+h3{
+    background: transparent;
+    color: hsl(0, 0%, 97%);
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+h3:hover{
+    color: hsl(35, 77%, 62%);
+}
+.boxes p{
+    background: transparent;
+    line-height: 18px;
+    color: hsl(231, 5%, 74%);
+}
+li:hover{
+    color: hsl(5, 85%, 63%);
+}
+#box3{
+    border:none;
+}
+.bottom{
+    align-items: center;
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    justify-content: center;
+}
+.menu{
+    display: none;
+}
+.box2{
+    width: 33.333%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.b_left{
+    width: 25%;
+    height: 100%;
+
+}
+#bl3{
+    background: url(images/image-gaming-growth.jpg) no-repeat center center/cover;
+    width: 30%;
+}
+#bl2{
+    background: url(images/image-top-laptops.jpg) no-repeat center center/cover;
+}
+#bl1{
+    background: url(images/image-retro-pcs.jpg) no-repeat center center/cover;
+    
+}
+.b_right{
+    width: 65%;
+    height: 100%;
+    padding-right: 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+span{
+    font-size: 2.5rem;
+    color: hsl(233, 8%, 79%);
+}
+#b2b{
+    width: 37%;
+}
+#b2c{
+    width: 29%;
+}
+h4{
+  font-size: 1.1rem;
+}
+button:hover{
+    color: rgb(228, 228, 228);
+    background-color: rgb(26, 26, 26);
+}
+h4:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+
+    ul{
+        flex-direction: column;
+        position: absolute;
+        right: -50%;
+        top: 9vh;  
+        display: none;
+        
+    }
+    .menu{
+        display: block;
+    }
+    .showUl{
+    right: 0%;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+   
+   
+ }
+section{
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+.hero_img{
+    height: 45%;
+}
+.top{
+    flex-direction: column;
+    width: 100%;
+    height: 110vh;
+}
+.bottom{
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    
+    justify-content: space-between;
+    margin: 1.5vh 0;
+}
+.boxes{
+    width: 80%;
+    
+}
+.container{
+    height: 160vh;
+    overflow: hidden;
+    width: 90vw;
+    max-width: 100vw;
+    overflow: hidden;
+}
+.left{
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    margin-bottom: 5vh;
+
+}
+.right{
+    width: 100%;
+    height: 50%;
+    
+}
+.box2{
+    width: 100%;
+    height: 15vh;
+}
+nav{
+    height: 10vh;
+    overflow: hidden;
+}
+#b2b{
+    width: 100%;
+}
+#b2c{
+    width: 100%;
+}
+.top_btom{
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.btom_left,.btom_right{
+    width: 100%;
+    height: 50%;
+    padding: 0%;
+}
+.boxes{
+    height:22% ;
+}
+
+}
